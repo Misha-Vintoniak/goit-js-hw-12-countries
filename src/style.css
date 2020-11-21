@@ -1,0 +1,39 @@
+body {
+  background-image: url(./img/karta-neon.jpg);
+  color: aliceblue;
+  font-size: 25px;
+}
+
+.countries-list {
+  display: inline-block;
+  padding: 0px;
+}
+/* колір  */
+.countries-list__item {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 25px;
+
+  font-weight: 700;
+}
+.js-input-search {
+  margin: 30px 30px 10px;
+  padding: 10px 30px;
+}
+.js-countries-container {
+  padding-left: 40px;
+}
+h2 {
+  margin: 0 20px 0;
+}
+.card {
+  display: flex;
+}
+p {
+  margin: 0 20px 10px 0;
+  color: yellow;
+}
+ul {
+  margin: 0;
+  color: yellow;
+}
