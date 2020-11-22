@@ -15,7 +15,11 @@ input.addEventListener('input', debounce(onSearch, 1000));
 clearBtn.addEventListener('click', clearCountry);
 
 function onSearch() {
-  return API(input.value).then(countries => onCountrySearch(countries));
+  if (!input.value) {
+    clearCountry();
+    return;
+  }
+  API(input.value).then(countries => onCountrySearch(countries));
 }
 
 function onCountrySearch(countries) {
@@ -42,7 +46,5 @@ function appendCountriesCard(countries) {
 }
 
 function clearCountry() {
-  console.log('click');
   divCountries.innerHTML = '';
-  input.value = '';
 }
